@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    #main{
+      background: linear-gradient(180deg, #54D839,#DD691C)/*linear gradient can take even 4 colors*/;
+      height: 100vh;
+    }
+    #contents{
+      margin: auto;
+      position: absolute;
+      top:40vh;
+    }
+    h1,p{
+      text-align:center;
+    }
+    p{
+      font-size: larger;
+    }
+    #btnHolder{
+      padding: 10px 90px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+    button{
+      font-size:larger;
+      padding: 3px 3px;
+      border: 2px solid #DD691C;
+      background:transparent;
+      backdrop-filter: blur(5px);
+    }
+    button:hover{
+      color: #DD691C;
+      border: 2px solid #000;
+    }
+    @media only screen and (min-width:600px){
+      p{
+        padding: 2px 20vw;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main">
+    <div id="contents">
+    <h1>Wel<span>come</span> to our website</h1>
+    <p>Linda Kizazi is a non-profit making organisation that is here for the males in our society who have been abadoned behind, here we express care and love for our fellow brothers,fathers,uncles and grandpas</p>
+    <div id="btnHolder">
+      <button id="about">Join Us</button>
+      <button id="contact">Contact Us</button>
+    </div>      
+    </div>
+  </div>
+  
+  <script>
+    let about = document.getElementById('about');
+    let contact = document.getElementById('contact');
+    
+    about.onclick = function(){
+      window.location.href = '/Web_project1/index.html'
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration form</title>
+  <style>
+    .container{
+      background-color:#E5E6E9;
+      color:#3ABE1A;
+      margin:auto;
+      width:95%;
+      height: auto;
+      font-family:'Trebuchet MS';
+      font-weight: 5px;
+    }
+    h2{
+      text-align: center;
+    }
+    legend{
+      text-align:center;
+    }
+    input{
+      height: 40px;
+      min-width: 300px;
+      max-width:350px;
+      border-radius: 7px;
+      outline-color:#68EF0E;
+    }
+    select{
+      outline-color: #68EF0E;
+    }
+    #submit{
+      background-color:orange;
+      margin-left: auto;
+      margin-right:auto;
+    }
+    #submit:hover{
+      color: #AB3AC3;
+      box-shadow:2px 2px 2px 2px #C2CAC6;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Registration form</h2>
+    <form action="">
+    <fieldset abled><!--if you put disabled the elements inside this fieldset will not work-->
+      <legend>Enter Your Infor</legend>
+      <label for="Full Name">Full Name: <br><input type="text"></label><br>
+      <label for="Email Address">Email Address: <br><input type="email"></label><br>
+      <label for="Phone no">Phone no: <br> <input type="number"></label><br>
+      <label for="Education Level">Education Level: <br><input type="text"></label><br>
+      <label for="Area Of Residence">Area Of Residence: <br> <select name="residence" id="residence">residence      <option value="Kiambu">Kiambu</option>
+          <option value="Embu">Embu</option>
+          <option value="Tharaka-nithi">Tharaka-nithi</option>
+          <option value="Nairobi">Nairobi</option>
+          <option value="Kisumu">Kisumu</option>
+      </select>
+      </label><br>
+      <label for="Date of birth">Date of birth: <br> <input type="date"></label><br><br>
+      <input type="submit" id="submit">
+    </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  *{
+    box-sizing:border-box;
+    margin: 0;
+    padding:0;
+  }
+  body{
+    background:#DADADA;
+  }
+  h3{
+    color:rgba(10, 29, 242, 1);
+    text-align:center;
+    text-shadow:4px 4px 4px rgba(63, 69, 140, 1);
+    font-size: 40px;
+  }
+   .container{
+     display:flex;
+     flex-wrap:wrap;
+     padding:40px;
+     border-radius:3px ;
+     background-color:rgba(155, 162, 234, 1);
+     height:200px;
+     width: 80%;
+     margin: auto;
+   }
+   .username,.password{
+     width:100%;
+     margin:5px;
+   }
+   .login{
+     width:20%;
+     align:center;
+     border-radius:3px ;
+     margin:auto;
+     background-color:rgba(102, 113, 233, 1);
+   }
+   p{
+     padding: 12px 1px 2px 1px;
+   }
+   @media only screen and (min-width:700px){
+     .container{
+       width:50%;
+     }
+   }
+  </style>
+</head>
+
+<body>
+  <h3>Please log in</h3>
+<div class="container">
+  <input type="text" placeholder="username" class="username">
+  <input type="password" placeholder="password" class="password" maxlength="10">
+  <button class="login">log in</button>
+  <p>Don't have an account?
+  <a href="/responsive login form/signUp2.html">Sign up</a></p>
+</div>
+</body>
+
+</html>
