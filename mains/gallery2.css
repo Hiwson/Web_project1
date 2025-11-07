@@ -14,7 +14,7 @@ span{
     grid-template-columns:auto auto auto;
     column-gap:6px ;
     row-gap: 6px ;
-    grid-template-rows:200px 150px 300px 180px 200px ;
+    grid-template-rows: 500px 500px 900px 500px 500px 500px 500px 500px;
   }
   div{
     height: auto ;
